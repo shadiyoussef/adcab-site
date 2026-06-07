@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AdCab — Striking cancer at its Achilles' heel</title>
+<meta name="description" content="AdCab is a precision oncolytic adenovirus armed with a novel Fc Dual Engager — a dual-action immunotherapy for the hardest-to-treat cancers." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;450;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="adcab.css" />
+</head>
+<body>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top" aria-label="AdCab home">
+      <img class="brand__logo brand__logo--light" src="assets/logo/adcab-white.png" alt="AdCab" />
+      <img class="brand__logo brand__logo--dark" src="assets/logo/adcab-dark.png" alt="AdCab" />
+    </a>
+    <nav class="nav__links">
+      <a class="nav-link" href="#problem">Problem</a>
+      <a class="nav-link" href="#solution">Solution</a>
+      <a class="nav-link" href="#technology">Technology</a>
+      <a class="nav-link" href="#data">Data</a>
+      <a class="nav-link" href="#market">Market</a>
+      <a class="nav-link" href="#team">Team</a>
+      <a class="btn btn--primary nav__cta" href="#contact">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" id="top">
+  <canvas class="hero__canvas" id="heroCanvas"></canvas>
+  <div class="hero__veil"></div>
+  <div class="container">
+    <div class="hero__eyebrow kicker">Oncolytic Immunotherapy · Pre-clinical</div>
+    <h1 class="h-display">When immunotherapy falls short — striking cancer at its <span class="em accent">Achilles' heel</span>.</h1>
+    <p class="hero__sub">A dual-action oncolytic immunotherapy for the hardest-to-treat cancers — turning the tumor into a biofactory that dismantles its own defenses and unleashes the full immune army.</p>
+    <div class="hero__cta">
+      <a class="btn btn--primary btn--lg" href="#contact">Get in touch <span class="arr">→</span></a>
+      <a class="btn btn--ghost btn--lg" href="#solution">See the science</a>
+    </div>
+    <div class="hero__origin"><span class="dot"></span> Spinning out of Prof. Vincenzo Cerullo's IVT Lab — University of Helsinki</div>
+
+    <div class="hero__metrics">
+      <div class="hero__metric"><div class="v"><span class="accent">€4M</span> → €8M</div><div class="l">Raise, matched 1:1</div></div>
+      <div class="hero__metric"><div class="v">5</div><div class="l">Manuscripts</div></div>
+      <div class="hero__metric"><div class="v">80+ / 15+</div><div class="l">In-vitro / in-vivo studies</div></div>
+      <div class="hero__metric"><div class="v">2028</div><div class="l">Target Phase I</div></div>
+    </div>
+  </div>
+  <div class="scrollhint"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ============================ PROBLEM ============================ -->
+<section class="section" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">01 — The Problem</div>
+      <h2 class="h-section">Immunosuppressive cancers: a high unmet need</h2>
+      <p class="lead">Pancreatic, triple-negative breast, and microsatellite-stable colorectal cancers don't respond to <em>any</em> approved immunotherapy — and survival has barely moved.</p>
+    </div>
+
+    <div class="triad reveal-stagger">
+      <article class="cancer-card">
+        <div class="abbr">PDAC</div>
+        <div class="full">Pancreatic ductal adenocarcinoma</div>
+        <div class="rows">
+          <div class="row"><span class="rv" data-count="425" data-suffix="K">425K</span><span class="rl">Advanced cases dx'd / yr</span></div>
+          <div class="row"><span class="rv">4.6<span class="u">mo</span></span><span class="rl">Median survival</span></div>
+          <div class="row row--bad"><span class="rv">3<span class="u">%</span></span><span class="rl">5-year survival</span></div>
+        </div>
+      </article>
+      <article class="cancer-card">
+        <div class="abbr">TNBC</div>
+        <div class="full">Triple-negative breast cancer</div>
+        <div class="rows">
+          <div class="row"><span class="rv" data-count="120" data-suffix="K">120K</span><span class="rl">Advanced cases dx'd / yr</span></div>
+          <div class="row"><span class="rv">12<span class="u">mo</span></span><span class="rl">Median survival</span></div>
+          <div class="row row--bad"><span class="rv">11<span class="u">%</span></span><span class="rl">5-year survival</span></div>
+        </div>
+      </article>
+      <article class="cancer-card">
+        <div class="abbr">MSS CRC</div>
+        <div class="full">Microsatellite-stable colorectal cancer</div>
+        <div class="rows">
+          <div class="row"><span class="rv" data-count="760" data-suffix="K">760K</span><span class="rl">Advanced cases dx'd / yr</span></div>
+          <div class="row"><span class="rv">22<span class="u">mo</span></span><span class="rl">Median survival</span></div>
+          <div class="row row--bad"><span class="rv">12<span class="u">%</span></span><span class="rl">5-year survival</span></div>
+        </div>
+      </article>
+    </div>
+
+    <p class="bigline reveal">More efficient therapies are <span class="accent">desperately needed</span>.</p>
+    <p class="fnote reveal" style="margin-top:18px;max-width:70ch">Standard-of-care includes chemotherapy combinations, ADCs for TNBC, and anti-angiogenic / anti-EGFR drugs for MSS CRC. These remain insufficient, and immunotherapies have mostly shown no clinical benefit.</p>
+  </div>
+</section>
+
+<!-- ============================ CHALLENGE ============================ -->
+<section class="section section--tight" id="challenge" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="split">
+      <div class="split__body reveal">
+        <div class="kicker">02 — The Challenge</div>
+        <h2 class="h-section">The tumor's immunosuppressive stronghold</h2>
+        <p class="lead">Immunosuppressive cells build a physical barrier around the tumor — protecting it, feeding it, and driving metastasis. The tumor microenvironment is where immunity hits a wall, and a mute button.</p>
+        <div class="reqs">
+          <div class="req"><span class="req__n">01</span><div><div class="req__t">Wake up the immune system</div><div class="req__d">Mobilize the body's defenses to recognize and attack the cancer.</div></div></div>
+          <div class="req"><span class="req__n">02</span><div><div class="req__t">Clear the suppressive barrier</div><div class="req__d">Dismantle the immunosuppressive shield within the tumor itself.</div></div></div>
+        </div>
+        <div class="callout-bar">None of the approved immunotherapies do <span class="accent">both</span>.</div>
+      </div>
+      <div class="split__media reveal">
+        <figure class="figure">
+          <img src="assets/diagrams/tme-stronghold.png" alt="Diagram of the tumor immunosuppressive stronghold: a central tumor surrounded by immunosuppressive immune cell types" loading="lazy" />
+          <figcaption class="figure__cap">The tumor microenvironment (TME) — a fortress of immunosuppressive cell types surrounding the tumor.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SOLUTION (dark) ============================ -->
+<section class="section section--dark" id="solution">
+  <div class="container">
+    <div class="split split--rev">
+      <div class="split__media reveal">
+        <figure class="figure">
+          <img src="assets/diagrams/biofactory.jpg" alt="AdCab injected into a patient travels to the tumor and turns tumor cells into biofactories producing a PD-L1 targeted peptide" loading="lazy" />
+          <figcaption class="figure__cap">Injected systemically, AdCab homes to the tumor — sparing healthy tissue — and converts tumor cells into biofactories.</figcaption>
+        </figure>
+      </div>
+      <div class="split__body reveal">
+        <div class="kicker">03 — The Solution</div>
+        <h2 class="h-section">AdCab: a precision virus armed with an Fc Dual Engager</h2>
+        <p class="lead">An oncolytic adenovirus that travels straight to the tumor, leaving healthy cells intact — then turns tumor cells into biofactories producing a chimeric, PD-L1-targeted peptide.</p>
+        <div class="pillars">
+          <div class="pillar"><div class="pillar__n">Action 01</div><div class="pillar__t">Disarms tumor defenses</div><div class="pillar__d">Reignites immunotherapy by clearing the suppressive barrier.</div></div>
+          <div class="pillar"><div class="pillar__n">Action 02</div><div class="pillar__t">Rallies the immune army</div><div class="pillar__d">Activates the full breadth of immune cells against the tumor.</div></div>
+        </div>
+        <p class="fnote" style="margin-top:26px">To date, no licensed immunotherapy effectively targets both immune suppression <em>and</em> immune stimulation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TECHNOLOGY ============================ -->
+<section class="section" id="technology">
+  <div class="container">
+    <div class="split">
+      <div class="split__body reveal">
+        <div class="kicker">04 — The Technology</div>
+        <h2 class="h-section">Fc Dual Engager — a unique Fc domain</h2>
+        <p class="lead">The peptide's novelty is its Fc: engineered as an <strong>IgG / IgA chimera</strong>. It broadly activates multiple immune cell types to mount a robust anti-tumor response while simultaneously eliminating immunosuppressive cells inside the tumor.</p>
+        <div class="chips">
+          <span class="chip">ADCC · PMNs / PBMCs</span>
+          <span class="chip">ADCP</span>
+          <span class="chip">Trogocytosis</span>
+          <span class="chip">CDC</span>
+        </div>
+        <div class="reqs" style="margin-top:34px">
+          <div class="req"><span class="req__n">→</span><div><div class="req__t">Kills or re-educates</div><div class="req__d">On binding a suppressive cell, the IgA arm either eliminates it — or flips it from a pro-tumor to an anti-tumor state.</div></div></div>
+          <div class="req"><span class="req__n">→</span><div><div class="req__t">Local production, enhanced safety</div><div class="req__d">Produced and active within the tumor, limiting systemic exposure and toxicity.</div></div></div>
+        </div>
+      </div>
+      <div class="split__media reveal">
+        <figure class="figure">
+          <img src="assets/diagrams/fc-engager.png" alt="Schematic of the IgG/IgA chimeric Fc Dual Engager antibody architecture" loading="lazy" style="max-height:300px" />
+          <figcaption class="figure__cap">IgG / IgA-chimeric Fc — a fully functional Fc that engages the full antibody-effector toolkit.</figcaption>
+        </figure>
+        <figure class="figure" style="margin-top:18px">
+          <img src="assets/diagrams/moa-cellstate.jpg" alt="A suppressive cell is either killed or repolarized from a pro-tumor to an anti-tumor state" loading="lazy" style="max-height:240px" />
+          <figcaption class="figure__cap">Repolarization: a suppressive cell switched from pro-tumor to anti-tumor.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ DIFFERENTIATION ============================ -->
+<section class="section" id="differentiation" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">05 — Differentiation</div>
+      <h2 class="h-section">AdCab vs. standard checkpoint inhibitors</h2>
+      <p class="lead">Checkpoint inhibitors block one axis. AdCab's dual engager engages the whole effector repertoire — and acts where it matters, inside the tumor.</p>
+    </div>
+
+    <div class="vs reveal">
+      <div class="vs__col vs__col--win">
+        <div class="vs__head"><span class="vs__name">AdCab — Fc Dual Engager</span><span class="vs__tag">Dual-action</span></div>
+        <ul class="vs__list">
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#E5197D"/><path d="M5 9.2l2.6 2.6L13 6.4" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>IgG / IgA-chimeric, fully functional Fc domain</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#E5197D"/><path d="M5 9.2l2.6 2.6L13 6.4" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Induces ADCC by PMNs/PBMCs, ADCP, trogocytosis &amp; CDC</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#E5197D"/><path d="M5 9.2l2.6 2.6L13 6.4" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Kills suppressive immune cells — or restores anti-tumor function</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#E5197D"/><path d="M5 9.2l2.6 2.6L13 6.4" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Activates all immune cell types against the cancer</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#E5197D"/><path d="M5 9.2l2.6 2.6L13 6.4" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>Local production in the tumor → enhanced safety</li>
+        </ul>
+      </div>
+      <div class="vs__col">
+        <div class="vs__head"><span class="vs__name">Standard checkpoint inhibitors</span><span class="vs__tag">Single-axis</span></div>
+        <ul class="vs__list">
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#CBD5E1"/><path d="M6 6l6 6M12 6l-6 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Type IgG Fc with attenuated effector functions</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#CBD5E1"/><path d="M6 6l6 6M12 6l-6 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Purely PD-1 / PD-L1 axis blocking</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#CBD5E1"/><path d="M6 6l6 6M12 6l-6 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Induces only ADCC by PBMCs, CDC</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#CBD5E1"/><path d="M6 6l6 6M12 6l-6 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Does not affect the suppressive immune compartment</li>
+          <li><svg class="mk" viewBox="0 0 18 18"><circle cx="9" cy="9" r="9" fill="#CBD5E1"/><path d="M6 6l6 6M12 6l-6 6" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>Systemic exposure — only part reaches the tumor</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="matrix-wrap reveal">
+      <table class="matrix">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="col-adcab">AdCab</th>
+            <th>Checkpoint inhibitors</th>
+            <th>ADCs</th>
+            <th>Chemotherapy</th>
+            <th>mRNA vaccines</th>
+            <th>Oncolytic viruses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Safety profile</th>
+            <td class="col-adcab"><span class="lvl lvl-high">High</span></td>
+            <td><span class="lvl lvl-high">High</span></td>
+            <td><span class="lvl lvl-med">Medium</span></td>
+            <td><span class="lvl lvl-low">Low</span></td>
+            <td><span class="lvl lvl-high">High</span></td>
+            <td><span class="lvl lvl-high">High</span></td>
+          </tr>
+          <tr>
+            <th>Activates multiple immune populations</th>
+            <td class="col-adcab"><span class="yes">Yes</span></td>
+            <td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td>
+          </tr>
+          <tr>
+            <th>Targets the tumor microenvironment</th>
+            <td class="col-adcab"><span class="yes">Yes</span></td>
+            <td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td><td class="no">No</td>
+          </tr>
+          <tr>
+            <th>Targets the tumor</th>
+            <td class="col-adcab"><span class="yes">Yes</span></td>
+            <td><span class="yes" style="color:var(--slate)">Yes</span></td><td><span style="color:var(--slate)">Yes</span></td><td><span style="color:var(--slate)">Yes</span></td><td><span style="color:var(--slate)">Yes</span></td><td><span style="color:var(--slate)">Yes</span></td>
+          </tr>
+          <tr>
+            <th>Usable across cancer types</th>
+            <td class="col-adcab"><span class="yes">Yes</span></td>
+            <td><span style="color:var(--slate)">Yes</span></td><td><span style="color:var(--slate)">Yes</span></td><td><span style="color:var(--slate)">Yes</span></td><td class="no">No</td><td><span style="color:var(--slate)">Yes</span></td>
+          </tr>
+          <tr class="examples">
+            <th>Examples</th>
+            <td class="col-adcab">—</td>
+            <td>MSD, BMS</td><td>Gilead, AstraZeneca</td><td>Genentech, Roche, Eli Lilly</td><td>BioNTech</td><td>Lokon Pharma</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="bigline reveal" style="font-size:clamp(1.2rem,2.2vw,1.6rem)">AdCab addresses multiple biological barriers <span class="accent">simultaneously</span>.</p>
+  </div>
+</section>
+
+<!-- ============================ PROOF OF CONCEPT ============================ -->
+<section class="section" id="data">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">06 — Proof of Concept</div>
+      <h2 class="h-section">Convincing pre-clinical data: dual action</h2>
+      <p class="lead">Across cancer models, AdCab depletes suppressor cells, activates the immune system, controls tumors better than checkpoints, and builds lasting memory.</p>
+    </div>
+
+    <div class="moa-grid reveal-stagger">
+      <div class="moa-card"><div class="num">01</div><div class="t">Depletes suppressor cells</div><div class="d">Granulocytic &amp; monocytic MDSCs and TAMs cleared from the tumor.</div></div>
+      <div class="moa-card"><div class="num">02</div><div class="t">Activates immune cells</div><div class="d">Drives active NK cells, CD8+ T cells and neutrophils.</div></div>
+      <div class="moa-card"><div class="num">03</div><div class="t">Superior tumor control</div><div class="d">Outperforms PD-L1 checkpoint inhibitors across models.</div></div>
+      <div class="moa-card"><div class="num">04</div><div class="t">Lasting memory response</div><div class="d">No relapse on tumor re-challenge — a vaccine-like effect.</div></div>
+    </div>
+
+    <div class="charts reveal">
+      <!-- Chart 1: Tumor control line -->
+      <div class="chart-card">
+        <div class="ct">Superior tumor control</div>
+        <div class="cs">MSS CRC · CT26 · tumor volume (mm³)</div>
+        <svg viewBox="0 0 300 200" role="img" aria-label="Line chart: AdCab keeps tumor volume near zero while Mock and mPD-L1 grow large">
+          <g stroke="#EDF1F5" stroke-width="1">
+            <line x1="40" y1="20" x2="40" y2="170"/><line x1="40" y1="170" x2="290" y2="170"/>
+            <line x1="40" y1="132" x2="290" y2="132"/><line x1="40" y1="94" x2="290" y2="94"/><line x1="40" y1="56" x2="290" y2="56"/>
+          </g>
+          <g fill="#9AA9B8" font-family="IBM Plex Mono" font-size="8">
+            <text x="36" y="173" text-anchor="end">0</text><text x="36" y="97" text-anchor="end">400</text><text x="36" y="59" text-anchor="end">800</text>
+            <text x="165" y="190" text-anchor="middle">Days post-engraftment</text>
+          </g>
+          <polyline fill="none" stroke="#9AA9B8" stroke-width="2.2" points="40,168 80,160 120,140 160,108 200,66 240,40 270,30"/>
+          <polyline fill="none" stroke="#0F9ED5" stroke-width="2.2" points="40,168 80,162 120,150 160,128 200,98 240,76 270,62"/>
+          <polyline fill="none" stroke="#E5197D" stroke-width="2.6" points="40,168 80,167 120,166 160,164 200,162 240,160 270,159"/>
+          <circle cx="270" cy="159" r="3" fill="#E5197D"/>
+        </svg>
+        <div class="chart-legend"><span><i style="background:#9AA9B8"></i>Mock</span><span><i style="background:#0F9ED5"></i>mPD-L1</span><span><i style="background:#E5197D"></i>AdCab</span></div>
+      </div>
+
+      <!-- Chart 2: Survival KM -->
+      <div class="chart-card">
+        <div class="ct">Survival without CD8+ T cells</div>
+        <div class="cs">TNBC · 4T1 · CD8-depleted · % survival</div>
+        <svg viewBox="0 0 300 200" role="img" aria-label="Kaplan-Meier survival curve: AdCab sustains highest survival even with CD8 cells depleted">
+          <g stroke="#EDF1F5" stroke-width="1">
+            <line x1="40" y1="20" x2="40" y2="170"/><line x1="40" y1="170" x2="290" y2="170"/>
+            <line x1="40" y1="132" x2="290" y2="132"/><line x1="40" y1="94" x2="290" y2="94"/><line x1="40" y1="56" x2="290" y2="56"/>
+          </g>
+          <g fill="#9AA9B8" font-family="IBM Plex Mono" font-size="8">
+            <text x="36" y="173" text-anchor="end">0</text><text x="36" y="97" text-anchor="end">50</text><text x="36" y="59" text-anchor="end">100</text>
+            <text x="165" y="190" text-anchor="middle">Days</text>
+          </g>
+          <polyline fill="none" stroke="#9AA9B8" stroke-width="2.2" points="40,30 110,30 110,90 150,90 150,150 190,150 190,170 290,170"/>
+          <polyline fill="none" stroke="#0F9ED5" stroke-width="2.2" points="40,30 130,30 130,72 180,72 180,128 230,128 230,160 290,160"/>
+          <polyline fill="none" stroke="#E5197D" stroke-width="2.6" points="40,30 170,30 170,52 230,52 230,66 290,66"/>
+          <circle cx="290" cy="66" r="3" fill="#E5197D"/>
+        </svg>
+        <div class="chart-legend"><span><i style="background:#9AA9B8"></i>Mock</span><span><i style="background:#0F9ED5"></i>mPD-L1</span><span><i style="background:#E5197D"></i>AdCab</span></div>
+      </div>
+
+      <!-- Chart 3: suppressor cell bar -->
+      <div class="chart-card">
+        <div class="ct">Suppressive cell clearance</div>
+        <div class="cs">TNBC · 4T1 · TAMs (% CD11b⁺ F4/80⁺)</div>
+        <svg viewBox="0 0 300 200" role="img" aria-label="Bar chart: AdCab shows lowest tumor-associated macrophage levels">
+          <g stroke="#EDF1F5" stroke-width="1">
+            <line x1="40" y1="170" x2="290" y2="170"/><line x1="40" y1="125" x2="290" y2="125"/><line x1="40" y1="80" x2="290" y2="80"/><line x1="40" y1="35" x2="290" y2="35"/>
+          </g>
+          <g fill="#9AA9B8" font-family="IBM Plex Mono" font-size="8">
+            <text x="36" y="173" text-anchor="end">0</text><text x="36" y="128" text-anchor="end">10</text><text x="36" y="83" text-anchor="end">20</text>
+          </g>
+          <g>
+            <rect x="58" y="50" width="38" height="120" fill="#9AA9B8" rx="2"/>
+            <rect x="112" y="62" width="38" height="108" fill="#9AA9B8" rx="2"/>
+            <rect x="166" y="80" width="38" height="90" fill="#0F9ED5" rx="2"/>
+            <rect x="220" y="138" width="38" height="32" fill="#E5197D" rx="2"/>
+          </g>
+          <g fill="#7C8B9A" font-family="IBM Plex Mono" font-size="7.5" text-anchor="middle">
+            <text x="77" y="184">Mock</text><text x="131" y="184">Ad-5/3</text><text x="185" y="184">mPD-L1</text><text x="239" y="184">AdCab</text>
+          </g>
+        </svg>
+        <div class="chart-legend"><span><i style="background:#E5197D"></i>AdCab clears the most</span></div>
+      </div>
+    </div>
+    <p class="fnote reveal" style="margin-top:16px">Representative pre-clinical data, simplified for illustration. Source: Hamdan et al., <em>JITC</em>, 2021, and IVT Lab studies.</p>
+
+    <div class="indications reveal" style="margin-top:34px">
+      <div class="ind"><span class="tag">MSS CRC</span><span class="txt">Outperforms PD-L1 checkpoints &amp; prevents relapse</span></div>
+      <div class="ind"><span class="tag">TNBC</span><span class="txt">Clears suppressive cells from the tumor</span></div>
+      <div class="ind"><span class="tag">TNBC</span><span class="txt">Works even without CD8+ T cells</span></div>
+      <div class="ind"><span class="tag">PDAC</span><span class="txt">Supercharges failing immunotherapies</span></div>
+    </div>
+
+    <div class="poc-strip reveal">
+      <div class="cell"><div class="v"><span class="accent">80+</span></div><div class="l">In-vitro tests</div></div>
+      <div class="cell"><div class="v"><span class="accent">15+</span></div><div class="l">In-vivo tests &amp; PDOs</div></div>
+      <div class="cell"><div class="v"><span class="accent">5</span></div><div class="l">Manuscripts</div></div>
+    </div>
+    <p class="bigline reveal" style="font-size:clamp(1.2rem,2.2vw,1.6rem)">Pre-clinical proof of concept — <span class="accent">finished</span>.</p>
+  </div>
+</section>
+
+<!-- ============================ PLATFORM ============================ -->
+<section class="section" id="platform" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="split">
+      <div class="split__body reveal">
+        <div class="kicker">07 — Platform</div>
+        <h2 class="h-section">AdCab is a platform technology</h2>
+        <p class="lead">Beyond a single asset, AdCab is a modular engine for generating novel compounds against new targets — rapidly, using the GAMER-Ad method.</p>
+        <div class="reqs" style="margin-top:30px">
+          <div class="req"><span class="req__n">01</span><div><div class="req__t">Modular design</div></div></div>
+          <div class="req"><span class="req__n">02</span><div><div class="req__t">Multiple tumor targets</div></div></div>
+          <div class="req"><span class="req__n">03</span><div><div class="req__t">Combination-ready with immunotherapies</div></div></div>
+          <div class="req"><span class="req__n">04</span><div><div class="req__t">Pipeline expansion</div></div></div>
+        </div>
+        <div class="callout-bar" style="margin-top:34px">One clinical success <span class="accent">validates the entire platform</span>.</div>
+      </div>
+      <div class="split__media reveal">
+        <figure class="figure">
+          <img src="assets/diagrams/platform-hexagon.jpg" alt="GAMER-Ad platform schematic — a modular adenovirus engine" loading="lazy" style="max-height:320px" />
+          <figcaption class="figure__cap">Rapid generation of novel compounds via the GAMER-Ad method (Hamdan et al.).</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ MARKET ============================ -->
+<section class="section" id="market">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">08 — Market</div>
+      <h2 class="h-section">A large, growing market</h2>
+      <p class="lead">AdCab sits at the intersection of a fast-growing indication-specific market and the broader immunotherapy wave.</p>
+    </div>
+
+    <div class="mkt-cards reveal">
+      <div class="mkt-card">
+        <div class="mkt-head"><span class="label">mCRC-MSS · indication-specific</span><span class="cagr">CAGR 8.5%</span></div>
+        <div class="flow">
+          <div class="yr"><div class="amt">$6.8B</div><div class="ylabel">2025</div></div>
+          <div class="arrow">→</div>
+          <div class="yr future"><div class="amt">$15.3B</div><div class="ylabel">2035</div></div>
+        </div>
+      </div>
+      <div class="mkt-card">
+        <div class="mkt-head"><span class="label">Cancer immunotherapy · global</span><span class="cagr">CAGR 8.4%</span></div>
+        <div class="flow">
+          <div class="yr"><div class="amt">$121B</div><div class="ylabel">2025</div></div>
+          <div class="arrow">→</div>
+          <div class="yr future"><div class="amt">$294B</div><div class="ylabel">2035</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="funnel reveal" style="margin-top:36px">
+      <div class="funnel-row"><div class="fk">TAM</div><div class="funnel-bar fb-tam"><span class="fa">$65B</span><span class="fd">Total addressable — 3 indications</span></div></div>
+      <div class="funnel-row"><div class="fk">SAM</div><div class="funnel-bar fb-sam"><span class="fa">$24B</span><span class="fd">Serviceable — EU + US (37%)</span></div></div>
+      <div class="funnel-row"><div class="fk">SOM</div><div class="funnel-bar fb-som"><span class="fa">$481M–1.2B</span><span class="fd">Obtainable — 2–5% target share</span></div></div>
+    </div>
+    <p class="fnote reveal" style="margin-top:18px">Based on global incidence across PDAC, TNBC and MSS CRC and immunotherapy pricing of ~$50,000 per patient (6–10 treatments).</p>
+  </div>
+</section>
+
+<!-- ============================ ROADMAP ============================ -->
+<section class="section" id="roadmap" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">09 — Business Model &amp; Roadmap</div>
+      <h2 class="h-section">Staged value creation, 2026–2031</h2>
+      <p class="lead">A capital-efficient path: advance the lead asset to early clinical proof of concept, partner after validation, and expand the platform in parallel.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="tl-track" style="--prog:42%">
+        <div class="tl-axis"></div>
+        <div class="tl-col is-key"><div class="tl-yr">2026</div><div class="tl-dot"></div><div class="tl-ev"><strong>Spinout</strong>Preclinical PoC &amp; spinout preparations</div></div>
+        <div class="tl-col"><div class="tl-yr">2027</div><div class="tl-dot"></div><div class="tl-ev"><strong>CTA-enabling</strong>Toxicology &amp; stability studies</div></div>
+        <div class="tl-col is-key"><div class="tl-yr">2028</div><div class="tl-dot"></div><div class="tl-ev"><strong>CTA + GMP</strong>Submission &amp; clinical batch release</div></div>
+        <div class="tl-col is-key"><div class="tl-yr">2029</div><div class="tl-dot"></div><div class="tl-ev"><strong>FPI · Phase I</strong>First patient in</div></div>
+        <div class="tl-col"><div class="tl-yr">2030</div><div class="tl-dot"></div><div class="tl-ev"><strong>Phase I</strong>Safety &amp; translational data</div></div>
+        <div class="tl-col"><div class="tl-yr">2031</div><div class="tl-dot"></div><div class="tl-ev"><strong>Clinical PoC</strong>Mature data → partnering</div></div>
+      </div>
+      <div class="tl-phases">
+        <div class="tl-phase p1">Spinout</div>
+        <div class="tl-phase p2">CMC</div>
+        <div class="tl-phase p3">Clinical Validation</div>
+      </div>
+    </div>
+
+    <div style="margin-top:64px" class="reveal">
+      <h3 class="h-sub" style="margin-bottom:6px">Strategic buyers &amp; comparable acquisitions</h3>
+      <p class="lead" style="font-size:1.05rem">Unique dual-targeting MoA, improved IO responses, and a platform built for combination therapies — exactly what acquirers reach for.</p>
+      <div class="acq-grid">
+        <div class="acq"><div class="amt">$1.9B</div><div class="deal">Amgen → Five Prime</div><div class="ph">After Phase II results</div></div>
+        <div class="acq"><div class="amt">$4.9B</div><div class="deal">Gilead → Forty Seven</div><div class="ph">After Phase Ib results</div></div>
+        <div class="acq"><div class="amt">$2.2B</div><div class="deal">Pfizer → Trillium</div><div class="ph">At Phase Ib/2</div></div>
+      </div>
+      <div class="paths">
+        <span class="path-pill"><span class="num">01</span>Licensing</span>
+        <span class="path-pill"><span class="num">02</span>Co-development</span>
+        <span class="path-pill"><span class="num">03</span>Regional licensing</span>
+        <span class="path-pill"><span class="num">04</span>Acquisition</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ REGULATORY ============================ -->
+<section class="section" id="regulatory">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">10 — Regulatory</div>
+      <h2 class="h-section">A clear EU regulatory pathway</h2>
+      <p class="lead">The plan pursues SME and PRIME status plus orphan drug designation — unlocking accelerated assessment, free protocol assistance, and 10 years of market exclusivity after approval.</p>
+    </div>
+
+    <div class="reg-flow reveal">
+      <div class="reg-band">
+        <div class="bh"><span class="pdot"></span><span class="pname">Non-clinical</span><span class="pyr">2027</span></div>
+        <div class="reg-steps">
+          <span class="reg-step">SME meeting</span>
+          <span class="reg-step">ITF meeting · apply SME status</span>
+          <span class="reg-step hot">ODD application</span>
+          <span class="reg-step hot">PRIME status</span>
+          <span class="reg-step">EMA scientific advice</span>
+          <span class="reg-step">Pre-CTA · NSA</span>
+        </div>
+      </div>
+      <div class="reg-band">
+        <div class="bh"><span class="pdot"></span><span class="pname">CTA</span><span class="pyr">~2028 · 4–6 months</span></div>
+        <div class="reg-steps">
+          <span class="reg-step">CTA application</span>
+          <span class="reg-step hot">CTA approval</span>
+        </div>
+      </div>
+      <div class="reg-band">
+        <div class="bh"><span class="pdot"></span><span class="pname">Clinical</span><span class="pyr">2029 →</span></div>
+        <div class="reg-steps">
+          <span class="reg-step">Phase I</span>
+          <span class="reg-step">Phase II</span>
+          <span class="reg-step">Phase III</span>
+          <span class="reg-step hot">MAA review</span>
+        </div>
+      </div>
+    </div>
+    <p class="fnote reg-note reveal">ODD = orphan drug designation · PRIME = Priority Medicines · SME = small/medium enterprise · ITF = Innovation Task Force · NSA = national scientific advice · MAA = marketing authorization application.</p>
+  </div>
+</section>
+
+<!-- ============================ IP ============================ -->
+<section class="section section--tight" id="ip" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">11 — Intellectual Property</div>
+      <h2 class="h-section">A protected, global portfolio</h2>
+      <p class="lead">National filings completed in the US and EU; office actions received and responded to in both regions. Additional filings are planned for comprehensive coverage.</p>
+    </div>
+    <div class="ip-wrap reveal">
+      <table class="ip">
+        <thead><tr><th>Region</th><th>Identifier</th><th>Priority date</th></tr></thead>
+        <tbody>
+          <tr><td class="region">Finland</td><td class="ident">FI20215115A</td><td class="date">2021-02-04</td></tr>
+          <tr><td class="region">PCT</td><td class="ident">WO2022167729A1</td><td class="date">—</td></tr>
+          <tr><td class="region">United States</td><td class="ident">US2024294605A1</td><td class="date">—</td></tr>
+          <tr><td class="region">European Union</td><td class="ident">EP4288080A1</td><td class="date">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ TEAM ============================ -->
+<section class="section" id="team">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">12 — Team</div>
+      <h2 class="h-section">A team that has done this before</h2>
+      <p class="lead">Seven years building AdCab, alongside one of the world's most recognized oncolytic-virus scientists and a commercialization lead who has taken this exact journey to the clinic.</p>
+    </div>
+
+    <div class="team-grid reveal-stagger">
+      <article class="member">
+        <div class="member__photo"><div class="member__mono"><span>VC</span></div></div>
+        <div class="member__body">
+          <div class="member__role">Scientific Advisor · Inventor</div>
+          <div class="member__name">Prof. Vincenzo Cerullo</div>
+          <div class="member__title">Head of Drug Discovery, Univ. of Helsinki · IVT Lab</div>
+          <p class="member__bio">Globally recognized leader in oncolytic virotherapy — ranked top 0.1% worldwide (Expertscape). Founder of Valo Therapeutics; provides strategic guidance and an extensive network across academia, industry and investors.</p>
+        </div>
+      </article>
+      <article class="member">
+        <div class="member__photo"><img src="assets/team/firas-hamdan.png" alt="Dr Firas Hamdan" loading="lazy" /></div>
+        <div class="member__body">
+          <div class="member__role">Scientific Lead · Inventor</div>
+          <div class="member__name">Dr Firas Hamdan, PhD</div>
+          <div class="member__title">Cancer immunology expert · post-doctoral researcher</div>
+          <p class="member__bio">Inventor of AdCab with first-principles command of its design and mechanism — led the platform from concept through validation at IVTLab. Author of 20+ publications (Nature Communications, ACS Nano).</p>
+        </div>
+      </article>
+      <article class="member">
+        <div class="member__photo"><img src="assets/team/tuuli-ranki.jpg" alt="Dr Tuuli Ranki" loading="lazy" /></div>
+        <div class="member__body">
+          <div class="member__role">Commercialization Lead</div>
+          <div class="member__name">Dr Tuuli Ranki, PhD</div>
+          <div class="member__title">Oncolytic virus &amp; pharma industry expert</div>
+          <p class="member__bio">10+ years from discovery to commercialization. Co-founder of Valo Therapeutics and former VP of Preclinical Development &amp; IP; prior oncology roles at Sanofi and Gilead Sciences.</p>
+        </div>
+      </article>
+    </div>
+
+    <div class="cred-strip reveal">
+      <div class="cred"><div class="v"><span class="accent">150+</span></div><div class="l">Scientific publications</div></div>
+      <div class="cred"><div class="v"><span class="accent">20+</span></div><div class="l">Life-science patents</div></div>
+      <div class="cred"><div class="v"><span class="accent">2</span></div><div class="l">Spinoff companies</div></div>
+    </div>
+
+    <div class="affil reveal">
+      <div class="affil__label">Affiliations &amp; track record</div>
+      <div class="affil__row">
+        <img class="big" src="assets/logos/helsinki.png" alt="University of Helsinki" />
+        <img src="assets/logos/valotx.jpg" alt="Valo Therapeutics" />
+        <img src="assets/logos/sanofi.png" alt="Sanofi" />
+        <img src="assets/logos/gilead.png" alt="Gilead" />
+        <img src="assets/logos/business-finland.png" alt="Business Finland" />
+        <img src="assets/logos/spark-finland.png" alt="SPARK Finland" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VALUE ============================ -->
+<section class="section" id="value" style="background:var(--surface);border-block:1px solid var(--line)">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="kicker">13 — What We Deliver</div>
+      <h2 class="h-section">Six reasons AdCab matters</h2>
+    </div>
+    <div class="value-grid reveal-stagger">
+      <div class="value-cell"><div class="vnum">01</div><div class="vt">Unmatched efficacy</div><div class="vd">Dismantles tumor defenses and drives full immune activation.</div></div>
+      <div class="value-cell"><div class="vnum">02</div><div class="vt">Safety &amp; precision</div><div class="vd">Precision delivery puts the drug exactly where it's needed.</div></div>
+      <div class="value-cell"><div class="vnum">03</div><div class="vt">Synergy</div><div class="vd">Supercharges existing immunotherapies — even in resistant tumors.</div></div>
+      <div class="value-cell"><div class="vnum">04</div><div class="vt">Efficiency</div><div class="vd">Poised for IND: experienced team, clear path, partners in place.</div></div>
+      <div class="value-cell"><div class="vnum">05</div><div class="vt">Scalability</div><div class="vd">A scalable platform with clear differentiation and blockbuster potential.</div></div>
+      <div class="value-cell"><div class="vnum">06</div><div class="vt">Hope</div><div class="vd">Built for the hardest-to-treat cancers — where the need is greatest.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ ASK / CONTACT (dark) ============================ -->
+<section class="section section--dark" id="contact">
+  <div class="container">
+    <div class="section-head reveal" style="max-width:820px">
+      <div class="kicker">The Ask</div>
+      <h2 class="h-section">€4M to reach Phase I</h2>
+    </div>
+    <div class="ask-grid">
+      <div class="reveal">
+        <div class="ask-eq">
+          <div class="box"><div class="n">€4M</div><div class="c">Our ask</div></div>
+          <div class="op">+</div>
+          <div class="box match"><div class="n">€4M</div><div class="c">Non-dilutive gov. funding</div></div>
+          <div class="op">=</div>
+          <div class="box total"><div class="n">€8M</div><div class="c">Total runway</div></div>
+        </div>
+        <p class="lead" style="color:#B9CADB">Matched 1:1 with non-dilutive government funding. A capital-efficient model — regional cost advantages, a lean experienced team, and tight collaboration with Prof. Cerullo's group — with several value inflection points and limited dilution.</p>
+      </div>
+      <div class="reveal">
+        <div class="runway__h">Runway through</div>
+        <ul class="runway">
+          <li><span class="rn">01</span>IND / CTA-enabling pre-clinical studies</li>
+          <li><span class="rn">02</span>GMP manufacturing for clinical supply</li>
+          <li><span class="rn">03</span>Regulatory submission (IND / CTA)</li>
+          <li><span class="rn">04</span>Preclinical platform development</li>
+          <li><span class="rn">05</span>Clinical trial readiness</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="contact-cta reveal" style="margin-top:60px;border-top:1px solid var(--line-dark);padding-top:48px">
+      <h3>Let's talk about reaching the clinic.</h3>
+      <p class="lead">If you can help us get there — capital, network, or partnership — reach out.</p>
+      <a class="mailbtn" href="mailto:Firas.hamdanhissaoui@helsinki.fi">✉  Firas.hamdanhissaoui@helsinki.fi</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div>
+        <img class="footer__logo" src="assets/logo/adcab-white.png" alt="AdCab" />
+        <p class="footer__meta">A precision oncolytic adenovirus armed with a novel Fc Dual Engager. Spinning out of Prof. Vincenzo Cerullo's IVT Lab, University of Helsinki.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#problem">The Problem</a>
+        <a href="#solution">The Solution</a>
+        <a href="#technology">Technology</a>
+        <a href="#data">Proof of Concept</a>
+        <a href="#team">Team</a>
+        <a href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 AdCab · University of Helsinki · IVT Lab</span>
+      <span>Firas.hamdanhissaoui@helsinki.fi</span>
+    </div>
+  </div>
+</footer>
+
+<script src="adcab.js"></script>
+</body>
+</html>

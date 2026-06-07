@@ -1,0 +1,22 @@
+{
+  // AdCab marketing site — static assets only, no server-side code.
+  "name": "adcab",
+  "compatibility_date": "2025-03-07",
+  "compatibility_flags": ["nodejs_compat"],
+  // Serve the exact design from ./public as static assets.
+  "assets": {
+    "directory": "./public",
+    // Single-page site: unknown paths fall back to index.html (also serves a nice 404).
+    "not_found_handling": "single-page-application"
+  },
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  // Custom domains — adcab.org (apex) and www. Zone is on Cloudflare; wrangler
+  // creates the DNS records + custom-domain bindings on deploy.
+  "routes": [
+    { "pattern": "adcab.org", "custom_domain": true },
+    { "pattern": "www.adcab.org", "custom_domain": true }
+  ]
+}

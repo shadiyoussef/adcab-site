@@ -35,7 +35,8 @@ sourced from the investor deck. No build step, no backend.
 - [ ] Cousin (fh230) accepts the GitHub invite
 - [ ] Replace Cerullo monogram with headshot
 - [ ] Decide: keep illustrative PoC charts or swap for exact deck figures
-- [ ] (Optional) GitHub Actions auto-deploy (wrangler) so merges ship automatically
+- [x] GitHub Actions auto-deploy workflow (.github/workflows/deploy.yml) + ACCOUNT_ID secret
+- [ ] Add `CLOUDFLARE_API_TOKEN` repo secret to activate auto-deploy (user-created token)
 - [ ] (Optional) re-enable workers.dev URL as fallback (`workers_dev: true`)
 - [ ] (Optional) analytics + real contact form
 

@@ -34,6 +34,21 @@ Then attach the custom domain **adcab.org** in the Cloudflare dashboard
 (Workers & Pages → adcab → Settings → Domains & Routes → Add custom domain),
 or via `wrangler`. DNS is already on Cloudflare since the domain was purchased there.
 
+## Auto-deploy (CI)
+Every push to `main` auto-deploys to Cloudflare via GitHub Actions
+(`.github/workflows/deploy.yml`, using `cloudflare/wrangler-action`). It can also be
+triggered manually from the repo's **Actions** tab ("Run workflow").
+
+Required repo secrets (Settings → Secrets and variables → Actions):
+- `CLOUDFLARE_ACCOUNT_ID` — already set.
+- `CLOUDFLARE_API_TOKEN` — create in Cloudflare (My Profile → API Tokens →
+  **Edit Cloudflare Workers** template; scope it to this account, and ensure the zone
+  `adcab.org` is included so custom-domain routes can be (re)applied). Add it with:
+  ```
+  gh secret set CLOUDFLARE_API_TOKEN --repo shadiyoussef/adcab-site
+  ```
+  Contributors no longer need their own Cloudflare login — merging to `main` ships it.
+
 ## Editing content
 All copy/data is inline in `public/index.html`, grouped by `<section id="…">`
 (`#problem`, `#solution`, `#technology`, `#data`, `#market`, `#team`, `#contact`, …).

@@ -1,0 +1,36 @@
+name: Deploy to Cloudflare
+
+# Auto-deploy the AdCab site to Cloudflare (adcab.org) on every push to main.
+# Also runnable manually from the Actions tab (workflow_dispatch).
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Avoid overlapping deploys; cancel an in-progress run if a newer push lands.
+concurrency:
+  group: deploy-cloudflare
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Deploy with Wrangler
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: deploy

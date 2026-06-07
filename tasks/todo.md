@@ -27,10 +27,13 @@ sourced from the investor deck. No build step, no backend.
 - [x] `npm run deploy` → deployed to Cloudflare
 - [x] Attach custom domain `adcab.org` + `www.adcab.org` (via wrangler routes)
 - [x] Verify live site: adcab.org + www both HTTP 200, valid SSL, correct page + assets
-- [ ] Add favicon + OG/social preview image
+- [x] Add favicon (white mark on navy tile: .ico + PNG set + apple-touch + manifest)
+- [ ] Add OG/social preview image
 - [ ] Replace Cerullo monogram with headshot
 - [ ] Decide: keep illustrative PoC charts or swap for exact deck figures
 - [ ] (Optional) re-enable workers.dev URL as fallback (`workers_dev: true`)
+- [x] git init + push to GitHub (private repo shadiyoussef/adcab-site)
+- [x] Invite collaborator fh230 (Write access) — invite pending acceptance
 
 ## 4. Progress
 Progress: 85% (SHIPPED — live at https://adcab.org and https://www.adcab.org; remaining items are polish)

@@ -36,7 +36,9 @@ sourced from the investor deck. No build step, no backend.
 - [ ] Replace Cerullo monogram with headshot
 - [ ] Decide: keep illustrative PoC charts or swap for exact deck figures
 - [x] GitHub Actions auto-deploy workflow (.github/workflows/deploy.yml) + ACCOUNT_ID secret
-- [ ] Add `CLOUDFLARE_API_TOKEN` repo secret to activate auto-deploy (user-created token)
+- [x] CI validated end-to-end (Node 22 + wrangler 4.98.0; all steps pass except auth)
+- [ ] Add `CLOUDFLARE_API_TOKEN` repo secret to activate auto-deploy (user-created token),
+      then re-run: `gh run rerun --repo shadiyoussef/adcab-site --latest`
 - [ ] (Optional) re-enable workers.dev URL as fallback (`workers_dev: true`)
 - [ ] (Optional) analytics + real contact form
 
@@ -45,8 +47,11 @@ Progress: 95% (SHIPPED & polished — live at https://adcab.org / www, favicon +
 card, in version control with a collaborator. Remaining items are optional/content.)
 
 ## 5. Next Actions
-1. Have fh230 accept the GitHub collaborator invite, then clone + `npm run preview`.
-2. Source a Prof. Cerullo headshot → swap the `.member__mono` "VC" block for an `<img>`.
-3. Decide whether to replace the illustrative PoC charts with exact deck figures.
-4. (Optional) set up GitHub Actions auto-deploy so contributor merges publish themselves.
+1. Create a Cloudflare API token (My Profile → API Tokens → "Edit Cloudflare Workers",
+   scoped to this account + the adcab.org zone) and add it:
+   `gh secret set CLOUDFLARE_API_TOKEN --repo shadiyoussef/adcab-site`
+   then `gh run rerun --repo shadiyoussef/adcab-site --latest` — auto-deploy goes live.
+2. Have fh230 accept the GitHub collaborator invite, then clone + `npm run preview`.
+3. Source a Prof. Cerullo headshot → swap the `.member__mono` "VC" block for an `<img>`.
+4. Decide whether to replace the illustrative PoC charts with exact deck figures.
 5. (Optional) add analytics and/or a real contact form.

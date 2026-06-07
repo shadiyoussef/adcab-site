@@ -28,7 +28,7 @@ sourced from the investor deck. No build step, no backend.
 - [x] Attach custom domain `adcab.org` + `www.adcab.org` (via wrangler routes)
 - [x] Verify live site: adcab.org + www both HTTP 200, valid SSL, correct page + assets
 - [x] Add favicon (white mark on navy tile: .ico + PNG set + apple-touch + manifest)
-- [ ] Add OG/social preview image
+- [x] Add OG/social preview image (1200x630 card + OG/Twitter meta)
 - [ ] Replace Cerullo monogram with headshot
 - [ ] Decide: keep illustrative PoC charts or swap for exact deck figures
 - [ ] (Optional) re-enable workers.dev URL as fallback (`workers_dev: true`)

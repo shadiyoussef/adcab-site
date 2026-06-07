@@ -421,16 +421,17 @@ table.matrix .no { color: var(--slate-2); }
 @media (max-width: 760px) { .mkt-cards { grid-template-columns: 1fr; } }
 
 .funnel { margin-top: 24px; display: flex; flex-direction: column; gap: 12px; }
-.funnel-row { display: grid; grid-template-columns: 70px 1fr; gap: 20px; align-items: center; }
+.funnel-row { display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 20px; align-items: center; }
 .funnel-row .fk { font-family: var(--font-mono); font-size: 0.78rem; color: var(--slate-2); letter-spacing: 0.08em; }
-.funnel-bar { height: 76px; border-radius: var(--r-sm); display: flex; align-items: center; padding-left: 28px; color: #fff; position: relative; transition: filter .3s; }
+.funnel-bar { min-width: 0; min-height: 76px; box-sizing: border-box; border-radius: var(--r-sm); display: flex; flex-wrap: wrap; align-items: center; gap: 2px 14px; padding: 12px 24px; color: #fff; position: relative; transition: filter .3s; }
 .funnel-bar:hover { filter: brightness(1.06); }
-.funnel-bar .fa { font-size: clamp(1.4rem, 3vw, 2.2rem); font-weight: 600; letter-spacing: -0.02em; }
-.funnel-bar .fd { font-family: var(--font-mono); font-size: 0.66rem; opacity: 0.82; margin-left: 14px; letter-spacing: 0.04em; }
+.funnel-bar .fa { font-size: clamp(1.3rem, 2.6vw, 2.1rem); font-weight: 600; letter-spacing: -0.02em; white-space: nowrap; }
+.funnel-bar .fd { font-family: var(--font-mono); font-size: 0.66rem; opacity: 0.82; letter-spacing: 0.04em; }
 .fb-tam { background: var(--navy); width: 100%; }
-.fb-sam { background: #1d4f73; width: 70%; }
-.fb-som { background: var(--magenta); width: 40%; }
-@media (max-width: 560px) { .funnel-row { grid-template-columns: 54px 1fr; gap: 12px; } .funnel-bar { padding-left: 18px; } }
+.fb-sam { background: #1d4f73; width: 72%; }
+.fb-som { background: var(--magenta); width: 54%; }
+@media (max-width: 720px) { .fb-sam, .fb-som { width: 100%; } }
+@media (max-width: 560px) { .funnel-row { grid-template-columns: 54px minmax(0, 1fr); gap: 12px; } .funnel-bar { padding: 12px 16px; } }
 
 /* ============================================================
    Roadmap timeline

@@ -33,7 +33,7 @@ sourced from the investor deck. No build step, no backend.
 - [x] Invite collaborator fh230 (Write access) — invite pending acceptance
 - [x] Fix SOM `$481M–1.2B` overflow in market funnel (verified headless, overflow=false)
 - [ ] Cousin (fh230) accepts the GitHub invite
-- [ ] Replace Cerullo monogram with headshot
+- [x] Replace Cerullo monogram with headshot
 - [ ] Decide: keep illustrative PoC charts or swap for exact deck figures
 - [x] GitHub Actions auto-deploy workflow (.github/workflows/deploy.yml) + ACCOUNT_ID secret
 - [x] CI validated end-to-end (Node 22 + wrangler 4.98.0; all steps pass except auth)

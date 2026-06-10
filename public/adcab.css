@@ -563,6 +563,7 @@ table.ip tbody tr:hover { background: var(--surface-2); }
 .contact-cta { margin-top: 8px; }
 .contact-cta h3 { font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: -0.02em; margin-bottom: 10px; }
 .contact-cta .lead { color: #B9CADB; margin-bottom: 28px; }
+.mailbtn-row { display: flex; flex-wrap: wrap; gap: 16px; }
 .mailbtn { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font-mono); font-size: 1rem; color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 16px 24px; border-radius: 100px; transition: border-color .25s, background .25s, transform .25s var(--ease); }
 .mailbtn:hover { border-color: var(--magenta); background: rgba(229,25,125,0.12); transform: translateY(-2px); }
 

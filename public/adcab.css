@@ -26,7 +26,7 @@
   --gutter: clamp(20px, 5vw, 64px);
 
   --font-sans: "Schibsted Grotesk", system-ui, -apple-system, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-mono: "Source Sans Pro", ui-monospace, sans-serif;
 
   --r-sm: 8px;
   --r-md: 14px;

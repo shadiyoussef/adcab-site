@@ -27,8 +27,6 @@ IVT Lab (University of Helsinki). Raising €4M (matched 1:1 → €8M) toward P
   (serves `public/` on :8000) or `npm run dev` (wrangler).
 
 ## Known placeholders to revisit
-- **Prof. Vincenzo Cerullo** shows a "VC" monogram — swap `.member__mono` for an `<img>`
-  in the Team section once a headshot is supplied.
 - Proof-of-concept charts (§ `#data`) are clean *illustrative* SVG recreations of the
   deck figures, simplified. Replace with exact figures if precise values are required.
 - Contact is a `mailto:` to `Firas.hamdanhissaoui@helsinki.fi`.

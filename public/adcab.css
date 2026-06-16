@@ -520,6 +520,10 @@ table.ip tbody tr:hover { background: var(--surface-2); }
 .member__body { padding: 24px; }
 .member__role { font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--magenta); }
 .member__name { font-size: 1.3rem; font-weight: 600; letter-spacing: -0.02em; margin-top: 12px; }
+.member__li { display: inline-flex; align-items: center; gap: 8px; color: inherit; text-decoration: none; transition: color .2s; }
+.member__li:hover { color: var(--magenta); }
+.li-icon { width: 16px; height: 16px; flex: none; opacity: 0.5; transition: opacity .2s; }
+.member__li:hover .li-icon { opacity: 1; }
 .member__title { font-size: 1rem; color: var(--slate-2); margin-top: 4px; font-family: var(--font-mono); letter-spacing: 0.01em; }
 .member__bio { font-size: 1rem; color: var(--slate); margin-top: 16px; line-height: 1.55; }
 @media (max-width: 880px) { .team-grid { grid-template-columns: 1fr; max-width: 460px; } }

@@ -207,7 +207,7 @@ p { text-wrap: pretty; }
     linear-gradient(180deg, rgba(14,40,65,0.2), rgba(14,40,65,0.55));
   pointer-events: none;
 }
-.hero .container { position: relative; z-index: 2; padding-block: clamp(40px, 8vh, 90px); }
+.hero .container { position: relative; z-index: 2; padding-block-start: clamp(40px, 8vh, 90px); padding-block-end: clamp(100px, 14vh, 140px); }
 .hero__eyebrow { margin-bottom: 28px; }
 .hero h1 { max-width: 16ch; margin-bottom: 28px; }
 .hero h1 .em { color: #FF73B0; }

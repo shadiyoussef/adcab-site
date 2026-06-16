@@ -387,6 +387,16 @@ table.matrix .no { color: var(--slate-2); }
 .chart-legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
 @media (max-width: 900px) { .charts { grid-template-columns: 1fr; } }
 
+/* manuscripts */
+.manuscripts { margin-top: 28px; display: flex; flex-direction: column; gap: 12px; }
+.ms-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 18px 22px; display: flex; flex-direction: column; gap: 6px; transition: border-color .2s; }
+.ms-card:hover { border-color: var(--magenta); }
+.ms-card__title { font-weight: 600; font-size: 1rem; line-height: 1.4; color: var(--ink); }
+.ms-card__meta { font-family: var(--font-mono); font-size: 1rem; color: var(--slate-2); display: flex; flex-wrap: wrap; gap: 6px 16px; }
+.ms-card__meta .journal { color: var(--magenta); }
+.ms-card a { text-decoration: none; color: inherit; }
+.ms-card a:hover .ms-card__title { color: var(--magenta); }
+
 .poc-strip { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 28px; border: 1px solid var(--line); border-radius: var(--r-md); overflow: hidden; background: var(--surface); }
 .poc-strip .cell { padding: 26px 28px; border-right: 1px solid var(--line); }
 .poc-strip .cell:last-child { border-right: none; }

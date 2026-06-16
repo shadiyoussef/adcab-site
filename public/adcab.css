@@ -534,9 +534,9 @@ table.ip tbody tr:hover { background: var(--surface-2); }
 .affil { margin-top: 56px; }
 .affil__label { font-family: var(--font-mono); font-size: 1rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate-2); text-align: center; margin-bottom: 28px; }
 .affil__row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: clamp(28px, 5vw, 56px); }
-.affil__row img { height: 34px; width: auto; object-fit: contain; opacity: 0.6; filter: grayscale(1); transition: opacity .3s, filter .3s; }
+.affil__row img { height: 54px; width: auto; object-fit: contain; opacity: 0.6; filter: grayscale(1); transition: opacity .3s, filter .3s; }
 .affil__row img:hover { opacity: 1; filter: grayscale(0); }
-.affil__row .big { height: 44px; }
+.affil__row .big { height: 68px; }
 
 /* ============================================================
    Value pillars
